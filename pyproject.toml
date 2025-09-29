@@ -10,6 +10,7 @@ dependencies = []
 dev = [
     "bs4>=0.0.2",
     "datetime>=5.5",
+    "ipykernel>=6.30.1",
     "pandas>=2.3.2",
     "pydantic>=2.11.9",
     "pydantic-settings>=2.11.0",
