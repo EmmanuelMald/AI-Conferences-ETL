@@ -12,33 +12,41 @@ version = "0.1.0"
 source = { virtual = "." }
 
 [package.dev-dependencies]
-dev = [
+conferences-ingestion-pipeline = [
     { name = "bs4" },
     { name = "datetime" },
-    { name = "ipykernel" },
-    { name = "loguru" },
-    { name = "notebook" },
     { name = "openpyxl" },
     { name = "pandas" },
+    { name = "requests" },
+]
+dev = [
+    { name = "loguru" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
-    { name = "requests" },
+]
+python-notebooks = [
+    { name = "ipykernel" },
+    { name = "notebook" },
 ]
 
 [package.metadata]
 
 [package.metadata.requires-dev]
-dev = [
+conferences-ingestion-pipeline = [
     { name = "bs4", specifier = ">=0.0.2" },
     { name = "datetime", specifier = ">=5.5" },
-    { name = "ipykernel", specifier = ">=6.30.1" },
-    { name = "loguru", specifier = ">=0.7.3" },
-    { name = "notebook", specifier = ">=7.4.7" },
     { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "pandas", specifier = ">=2.3.2" },
+    { name = "requests", specifier = ">=2.32.5" },
+]
+dev = [
+    { name = "loguru", specifier = ">=0.7.3" },
     { name = "pydantic", specifier = ">=2.11.9" },
     { name = "pydantic-settings", specifier = ">=2.11.0" },
-    { name = "requests", specifier = ">=2.32.5" },
+]
+python-notebooks = [
+    { name = "ipykernel", specifier = ">=6.30.1" },
+    { name = "notebook", specifier = ">=7.4.7" },
 ]
 
 [[package]]
